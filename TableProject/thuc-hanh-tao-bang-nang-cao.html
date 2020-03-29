@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>thực hành tạo bảng nâng cao</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        html{
+            background-color:#ccc;
+        }
+        body{
+            width:800px;
+            margin:10px auto;
+            background-color:white;
+            box-shadow:0 0 20px rgba(0,0,0,0.6);
+            padding:20px 0;
+        }
+        table{
+            width:720px;
+            margin:20px 40px;
+            border-collapse:collapse;
+        }
+
+        table caption {
+            padding: 5px;
+            text-transform: uppercase;
+            font-size: 2em;
+            font-weight: bold;
+            color: #54a7ff;
+            text-align: left;
+        }
+        table td{
+            text-align:center;
+            padding:10px 20px;
+        }
+        table tr:nth-of-type(1), table tr:nth-of-type(2){
+            background-color:red;
+            color:white;
+            font-weight:bold;
+            font-style:italic;
+            font-size:1em;
+        }
+        table tr:nth-of-type(1){
+            border-right:white;
+
+        }
+        table tr:nth-of-type(2){
+            border-top:1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>Thời khóa biểu</caption>
+        <tr>
+            <td rowspan="2">Thứ</td>
+            <td colspan="2">Hoạt động</td>
+        </tr>
+        <tr>
+
+            <td>Sáng</td>
+            <td>Chiều</td>
+        </tr>
+        <tr>
+            <td>Thứ 2</td>
+            <td>Học JavaScript</td>
+            <td>Học JavaScript </td>
+        </tr>
+        <tr>
+            <td>Thứ 3</td>
+            <td>Học JavaScript</td>
+            <td>Học JavaScript</td>
+        </tr>
+        <tr>
+            <td>Thứ 4</td>
+            <td>Học JavaScript</td>
+            <td>Học JavaScript</td>
+        </tr>
+        <tr>
+            <td>Thứ 5</td>
+            <td>Học JavaScript</td>
+            <td>Học JavaScript</td>
+        </tr>
+    </table>
+</body>
+</html>
