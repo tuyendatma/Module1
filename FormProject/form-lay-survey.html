@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[Bài tập] Tạo form lấy survey khách hàng</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: Arial,sans-serif;
+            font-size:100%;
+        }
+        body{
+
+        }
+        hr{
+            border:none;
+            border-bottom: 1px dashed rgba(0,0,0,0.3);
+        }
+        section{
+            padding:10px 0px 10px 0px;
+        }
+        section:hover{
+            background-color:#f8faca;
+        }
+        section h1,h2,p,select,div,textarea {
+            margin-left:10px;
+            margin-top:5px;
+            margin-bottom:5px;
+        }
+        section .wrapRadio span{
+            padding-left:10px;
+        }
+        section .wrapRadio .underCheckBox, section .wrapRadio p{
+            margin-left:25px;
+        }
+        section .wrapRadio .underCheckBox:focus .hidden{
+            display:block;
+        }
+        .hidden{
+            display:none;
+        }
+
+        section h1{
+            font-size:1.2em;
+        }
+        section h2{
+            font-size:0.8em;
+        }
+        section p{
+            font-size:0.8em;
+        }
+        section select{
+            width:700px;
+            padding :5px;
+            border:1px solid black;
+            border-radius:4px;
+        }
+    .money span, .money p, .money > div {
+        display: inline-block;
+        vertical-align: top;
+    }
+     .money{
+         width:300px;
+     }
+        .money p {
+            display: block;
+        }
+        .money .dollar{
+            width:100px;
+        }
+        .money input{
+
+        }
+        .money .cent{
+            width:20px;
+        }
+        section textarea{
+            width:90%;
+            height:50px;
+        }
+    </style>
+    <script>
+
+
+    </script>
+</head>
+<body>
+    <section>
+        <h1>Market Research Survey</h1>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+    </section>
+    <hr>
+    <form action="" method="post">
+        <section>
+            <h2>What is your age range?</h2>
+            <select name="age" id="">
+                <option value="">18-24</option>
+                <option value="">25-34</option>
+                <option value="">35-50</option>
+                <option value="">50+</option>
+            </select>
+        </section>
+        <section>
+            <h2>What is your yearly income range?</h2>
+            <select name="age" id="">
+                <option value="">$0 - $25,000</option>
+                <option value="">$25,001 - $50,000</option>
+                <option value="">$50,001 - $100,000</option>
+                <option value="">$100,000+</option>
+            </select>
+        </section>
+        <section>
+            <h2>Gender Identity</h2>
+            <div class="wrapRadio">
+                <input type="radio" name="gender"><span>Male</span>
+            </div>
+            <div class="wrapRadio">
+                <input type="radio" name="gender"><span>Female</span>
+            </div>
+            <div class="wrapRadio">
+                <input type="radio"><span>Nonbinary</span>
+            </div>
+            <div class="wrapRadio radio_Other">
+                <input type="radio"><span>Other</span>
+            </div>
+            <div class="wrapRadio">
+                <input type="text" class="underCheckBox">
+                <p class="hidden">Maximum of <strong>250</strong> characters.    <i>Currently Used: <strong>0</strong> characters.</i></p>
+            </div>
+        </section>
+        <section>
+            <h2>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h2>
+            <div class="wrapRadio">
+                <input type="checkbox"><span>Product 1</span>
+            </div>
+            <div class="wrapRadio">
+                <input type="checkbox"><span>Product 2</span>
+            </div>
+            <div class="wrapRadio">
+                <input type="checkbox"><span>Product 3</span>
+            </div>
+        </section>
+        <section>
+            <h2>How often would you use our new product?</h2>
+            <div class="wrapRadio">
+                <input type="radio"><span>Daily</span>
+            </div>
+            <div class="wrapRadio">
+                <input type="radio"><span>Weekly</span>
+            </div>
+            <div class="wrapRadio">
+                <input type="radio"><span>Monthly</span>
+            </div>
+        </section>
+        <section class="money">
+            <h2>What would you pay for the new product?</h2>
+            <span>$</span>
+            <div >
+                <input type="text" class="dollar">
+                <p>Dollars</p>
+            </div>
+            <span>.</span>
+            <div >
+                <input type="text" class="cent">
+                <p>Cents</p>
+            </div>
+        </section>
+        <section>
+            <h2>What features would you like to see in the new product.</h2>
+            <textarea>
+
+            </textarea>
+        </section>
+    </form>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tao form don gian</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:#c2c1be;
+            font-family: "Times New Roman",Times,Serif;
+            box-sizing:border-box;
+            font-size:100%;
+
+        }
+        article{
+            width:720px;
+            margin:20px auto;
+            background-color:white;
+            box-shadow:0 0 20px rgba(0,0,0,0.6);
+            padding:10px
+        }
+        article h1{
+            background-color:#ff5e29;
+            color:white;
+            text-align:center;
+            padding:10px;
+            margin-bottom:10px;
+            text-transform:uppercase;
+        }
+        article section{
+            margin-bottom:10px;
+        }
+        article section label{
+            display:inline-block;
+            width:20%;
+            text-align:right;
+            margin-right:7px;
+            vertical-align:top;
+        }
+        article section input[type="text"]{
+            display:inline-block;
+            width:70%;
+            padding:10px;
+            border:1px solid black;
+            border-radius:4px;
+        }
+        article section select{
+            padding:10px;
+            border:1px solid black;
+            border-radius:4px;
+        }
+        article section input[type="checkbox"]{
+            width:15px;
+        }
+        article section .wrapCheckBox{
+            display:inline-block;
+            width:70%;
+            padding:10px;
+            border:1px solid black;
+            border-radius:4px;
+        }
+        article .wrapButton{
+            margin-left:22%;
+        }
+        article button, input[type="reset"]{
+            padding:10px;
+            margin-right:5px;
+            border:1px solid black;
+            border-radius:3px;
+        }
+        article button:hover, input[type="reset"]:hover{
+            box-shadow:0 0 5px rgba(0,0,0,0.7);
+        }
+        article section .wrapInput_Span{
+            display:inline-block;
+            margin:0px 5px 5px 0px;
+            padding:2px;
+        }
+        article section input[type="text"]:focus{
+            box-shadow:0 0 10px rgba(0,0,0,0.7);
+        }
+
+        .form2 h1{
+            color:blue;
+            background-color:#d2ffab;
+            text-align:left;
+        }
+        .form2 section label{
+            text-align:left;
+        }
+    </style>
+</head>
+<body>
+<article>
+<form action="" method="post">
+    <h1>Sở thích của bạn</h1>
+    <section>
+        <label for="hoten">Họ và Tên</label>
+        <input type="text" name="hoten" placeholder="Họ và Tên">
+    </section>
+    <section>
+        <label for="email">Email</label>
+        <input type="text" name="email" placeholder="Email">
+    </section>
+    <section>
+        <label for="sothich">Sở thích</label>
+        <div class="wrapCheckBox">
+            <div class="wrapInput_Span"><input type="checkbox" name="sothich"><span>Thể thao</span></div>
+            <div class="wrapInput_Span"><input type="checkbox" name="sothich"><span>Âm nhạc</span></div>
+            <div class="wrapInput_Span"><input type="checkbox" name="sothich"><span>Đọc sách</span></div>
+            <div class="wrapInput_Span"> <input type="checkbox" name="sothich"><span>Lướt web</span></div>
+            <div class="wrapInput_Span"><input type="checkbox" name="sothich"><span>Chơi game</span></div>
+            <div class="wrapInput_Span"><input type="checkbox" name="sothich"><span>Điện ảnh</span></div>
+            <div class="wrapInput_Span"><input type="checkbox" name="sothich"><span>Du lịch</span></div>
+        </div>
+    </section>
+    <div class="wrapButton">
+        <button>Gửi thông tin</button>
+        <input type="reset" value="Nhập lại">
+    </div>
+    </article>
+
+    <article class="form2">
+        <form action="" method="post">
+            <h1>Đăng ký học viên</h1>
+            <section>
+                <label for="hoten">Họ và Tên</label>
+                <input type="text" name="hoten" placeholder="Họ và Tên">
+            </section>
+            <section>
+                <label for="hoten">Ngày sinh</label>
+                <input type="text" name="ngaysinh" placeholder="Ngày sinh">
+            </section>
+            <section>
+                <label for="sothich">Giới tính</label>
+                <div class="wrapCheckBox">
+                    <div class="wrapInput_Span"><input type="checkbox" name="gioitinh"><span>Nam</span></div>
+                    <div class="wrapInput_Span"><input type="checkbox" name="gioitinh"><span>Nữ</span></div>
+                </div>
+            </section>
+            <section>
+                <label for="hoten">Địa chỉ</label>
+                <input type="text" name="diachi" placeholder="Địa chỉ">
+            </section>
+            <section>
+                <label for="hoten">Lớp</label>
+                <select name="" id="">
+                    <option value="">Chọn lớp</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                </select>
+            </section>
+            <section>
+                <label for="hoten">Email</label>
+                <input type="text" name="email" placeholder="Email">
+            </section>
+            <section>
+                <label for="hoten">Điện Thoại</label>
+                <input type="text" name="dienthoai" placeholder="Điện Thoại">
+            </section>
+        </form>
+    </article>
+</form>
+</body>
+</html>
