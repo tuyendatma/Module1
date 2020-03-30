@@ -1,4 +1,4 @@
 function massage() {
-    alert("hello day")
+    alert("Xin chào em gái");
 
 }
