@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trainingIfElse</title>
+</head>
+<body>
+<label><h3>What is the "office" name of JavaScript?</h3></label>
+<textarea id="answer"></textarea>
+<button type="button" onclick="RightOrWrong()">Send</button>
+
+<script>
+function RightOrWrong() {
+    let aAnswer = document.getElementById('answer').value;
+    if (aAnswer === 'ECMAScript'){
+        alert('Right!')
+    } else {
+        alert("Didn’t know? ECMAScript!")
+    }
+}
+</script>
+</body>
+</html>
