@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trainingIfElseIf</title>
+</head>
+<body>
+<script>
+    let userName = prompt('nhập tên vào!');
+    if (userName =='Admin'){
+        let password = prompt('nhập pass vào!');
+        if (password =='TheMaster') {
+            alert('Welcome!');
+        }
+        else if (password ==null){
+            alert('Canceled');
+        }
+        else {
+            alert('Wrong password');
+        }
+    }else if (userName==null){
+        alert('canceled');
+    }else {
+        alert('i dont know you!');
+    }
+
+</script>
+</body>
+</html>
