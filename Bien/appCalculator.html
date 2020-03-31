@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="number" id ="firstNumber" name ="so thu nhat" value="1">
+<input type="number" id ="secondNumber" name ="so thu hai">
+<br><br>
+<button onclick="tinhTong()" id="tong">Addition(+)</button>
+<button onclick="tinhHieu()" id="hieu">Subtraction(-)</button>
+<button onclick="tinhTich()"id="tich">Multiplication(x)</button>
+<button onclick="tinhThuong()"id="thuong">Division(/)</button>
+<script>
+
+
+    //let tong, hieu, tich, thuong;
+    function tinhTong(){
+        let inputSoThu1 = document.getElementById("firstNumber").value;
+        let inputSoThu2 = document.getElementById("secondNumber").value;
+        let soThu1 = parseInt(inputSoThu1);
+        let soThu2 = parseInt(inputSoThu2);
+        alert("ket qua la: "+(soThu1+soThu2));
+    }
+
+    function tinhHieu(){
+        let inputSoThu1 = document.getElementById("firstNumber").value;
+        let inputSoThu2 = document.getElementById("secondNumber").value;
+        let soThu1 = parseInt(inputSoThu1);
+        let soThu2 = parseInt(inputSoThu2);
+        alert(soThu1-soThu2);
+    }
+    function tinhTich(){
+        let inputSoThu1 = document.getElementById("firstNumber").value;
+        let inputSoThu2 = document.getElementById("secondNumber").value;
+        let soThu1 = parseInt(inputSoThu1);
+        let soThu2 = parseInt(inputSoThu2);
+        alert(soThu1*soThu2);
+    }
+    function tinhThuong(){
+        let inputSoThu1 = document.getElementById("firstNumber").value;
+        let inputSoThu2 = document.getElementById("secondNumber").value;
+        let soThu1 = parseInt(inputSoThu1);
+        let soThu2 = parseInt(inputSoThu2);
+        alert(soThu1/soThu2);
+    }
+</script>
+</body>
+</html>

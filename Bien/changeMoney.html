@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+    <style>
+         button {
+            color: white;
+             background-color: #54a7ff;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="doiTien.js">
+        <h2>Amount</h2><br>
+        <input type="number" id="moneyInput" name="money">
+        <h2>From Currency</h2><br>
+        <select name="country" id ="selectCountry">
+            <option value="Vietnam">VietNam</option>
+            <option value="China">China</option>
+            <option value="USA">USA</option>
+        </select>
+        <h2>To Currency</h2><br>
+        <select name="country2" id ="selectCountry2">
+            <option value="Vietnam">VietNam</option>
+            <option value="China">China</option>
+            <option value="USA">USA</option>
+        </select>
+        <br>
+        <button type="button" onclick="changeMoney()">Convert</button>
+        <span id ="result"></span>
+</form>
+<script>
+
+
+
+    function changeMoney() {
+        //let money = document.getElementById("moneyInput").value;
+        // document.write(money);
+        // let country = document.getElementById("selectCountry").value;
+        // document.write(country);
+        //var country1= document.querySelectorAll('#selectCountry option');
+        //country1.forEach(key =>{
+        //  if(key.selected){
+        //alert(key.value);
+        // document.write(key.value);
+        //  }
+        // })
+        //  var country2= document.querySelectorAll('#selectCountry2 option')
+        // country2.forEach(key =>{
+        //     if(key.selected){
+        //         alert(key.value);
+        //     }
+        //     }
+        // )
+        // for(let i=0;i<country2.length;i++){
+        //  if(country2[i].selected){
+        ///      //alert(country2[i].value);
+        // }
+        //  }
+
+        //  }
+        let money = document.getElementById("moneyInput").value;
+        let fromCurrency = document.getElementById("selectCountry").value;
+        let toCurrency = document.getElementById("selectCountry2").value;
+        let result;
+        console.log(fromCurrency);
+        if (fromCurrency==='Vietnam')
+        {
+            if (toCurrency==='China')
+            {
+                result = money* 3;
+            }
+            if(toCurrency==='USA')
+            {
+                result = money* 23;
+            }
+            if(toCurrency==='Vietnam')
+            {
+                result= 'dua nhau a';
+            }
+        }
+        else if (fromCurrency==='China')
+        {
+            if (toCurrency==='Vietnam')
+            {
+                result = money/ 3;
+            }
+            if(toCurrency==='USA')
+            {
+                result = money* 23/3;
+            }
+            if(toCurrency==='China')
+            {
+                result= 'dua nhau a';
+            }
+        }
+        else
+        {
+            if (toCurrency==='China')
+            {
+                result = money/23*3;
+            }
+            if(toCurrency==='Vietnam')
+            {
+                result = money/ 23;
+            }
+            if(toCurrency==='USA')
+            {
+                result= 'dua nhau a';
+            }
+        }
+        document.getElementById("result").innerText = result;
+    }
+
+</script>
+</body>
+</html>
