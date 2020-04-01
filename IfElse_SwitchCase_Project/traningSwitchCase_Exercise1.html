@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+<label>what browser you choice?</label>
+<input type="text" name="browser" id="browser"><br>
+<button type="button" onclick="choiceBrowser()">Send</button>
+<script>
+    function choiceBrowser() {
+        let browser = document.getElementById('browser').value;
+
+        switch (browser) {
+            case 'Edge':
+                alert("You've got the Edge!");
+                break;
+            case 'Chrome':
+            case 'Firefox':
+            case 'Safari':
+            case 'Opera':
+                alert('Okay we support these browsers too');
+                break;
+            default:
+                alert('We hope that this page looks ok!');
+        }
+    }
+</script>
+</body>
+</html>
