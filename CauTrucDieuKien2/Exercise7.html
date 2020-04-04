@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    let a =parseInt(prompt('nhập giá trị a:'));
+    let b =parseInt(prompt('nhập giá trị b:'));
+    let c =parseInt(prompt('nhập giá trị c:'));
+    let delta, ketQua1, ketQua2;
+    if(a ==0){
+        alert('không phải phương trình bậc 2');
+    }else {
+        delta = b*b -4*a*c;
+        if (delta>0){
+            ketQua1 = (-b + sqrt(delta))/2*a;
+            ketQua2 = (-b - sqrt(delta))/2*a;
+            document.write('phương trình có 2 nghiệm là: '+ketQua2 +'và'+ketQua1)
+
+        }else if (delta==0){
+            ketQua1 = -b/2*a;
+            ketQua2 = -b/2*a;
+            document.write('phương trình có nghiệm kép: '+ketQua2);
+        }else {alert('phương trình vô nghiệm')}
+    }
+
+
+</script>
+</body>
+</html>
