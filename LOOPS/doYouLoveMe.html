@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DO YOU lOVE ME?</title>
+    <style type="text/css">
+
+        div {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #666666;
+            color: white;
+            width: 30px;
+        }
+        #selectNo {
+            text-align: center;
+            margin-left: 600px;
+
+        }
+    </style>
+</head>
+<body>
+<h1>DO YOU LOVE ME?</h1>
+<div id="selectYes" >YES</div>
+<div id="selectNo" >NO</div>
+<script>
+    let yes = document.getElementById('selectYes');
+    let no = document.getElementById('selectNo');
+    no.addEventListener('mouseover',function(){
+        no.style.position = 'absolute';
+        no.style.left = (Math.floor(Math.random() * ((window.innerWidth-20) - 20 + 1) ) + 20) + 'px';
+        no.style.top = (Math.floor(Math.random() * ((window.innerHeight-20) - 20 + 1) ) + 20) + 'px';
+    })
+    yes.addEventListener('mouseover',function(){
+      alert('<3')
+    })
+
+</script>
+</body>
+</html>
