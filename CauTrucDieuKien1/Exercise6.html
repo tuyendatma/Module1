@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa  hồng</title>
+</head>
+<body>
+<h2>số tiền hoa hồng kiếm được</h2>
+<p id="HoaHong"></p>
+<script>
+    let doanhThu= parseInt(prompt('nhập tổng số tiền hàng bán được trong năm:'));
+    let tienHoaHong;
+    if (doanhThu>= 10000000000){
+        tienHoaHong = doanhThu *2 /100;
+    }else if (doanhThu>=7000000000){
+        tienHoaHong = doanhThu *1.5/100;
+    }else if (doanhThu> 4000000000){
+        tienHoaHong = doanhThu/100;
+    }else {tienHoaHong = 0;}
+    document.getElementById('HoaHong').innerText = tienHoaHong
+
+</script>
+</body>
+</html>

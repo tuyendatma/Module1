@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp loại sinh viên</title>
+</head>
+<body>
+<script>
+    let diemChuyenCan = parseInt(prompt('nhập điểm chuyên cần:'));
+    let diemThucHanh =parseInt(prompt('nhập điểm thực hành:'));
+    let diemThi = parseInt(prompt('nhập điểm thi hết môn:'));
+    let diemTongKet = diemChuyenCan*0.1 + diemThucHanh*0.3 + diemThi*0.6;
+    if (diemTongKet>=8.5) {
+        alert('bạn là học sinh Giỏi');
+    }else if (diemTongKet>=7){
+        alert('bạn là học sinh Khá');
+    }else if (diemTongKet>=5.5){
+        alert('bạn là học sinh Trung Bình');
+    }else if (diemTongKet>= 4.0){
+        alert('bạn là học sinh Yếu')
+    }else alert('thi lại nha cưng :D');
+</script>
+</body>
+</html>
