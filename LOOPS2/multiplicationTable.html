@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let box = "<table border='1' width='300' cellspacing='0' cellpadding='3'> ";
+    let x=2;
+    let y=1;
+
+    while (x<10){
+        box = box + '<tr>';
+        while (y <10){
+            let ketQua= x*y;
+            box = box + '<td>' + x + 'x' + y + '=' +ketQua +'</td>';
+            y++;
+        }
+        box = box + '</tr>';
+        y =1;
+        x++;
+    }box = box +'</table>';
+    document.write(box);
+</script>
+</body>
+</html>
