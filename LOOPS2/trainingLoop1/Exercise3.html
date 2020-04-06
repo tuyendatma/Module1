@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonaci</title>
+</head>
+<body>
+<script>
+
+    let i =5;
+    let a = Math.sqrt(5);
+    let b = (1+a)/2;
+    let c = (1-a)/2;
+
+
+     for (i;i<20;i++){
+        let ketQua= (Math.pow(b,i)-Math.pow(c,i));
+        let j = Math.abs(ketQua/a);
+        document.write(j+'<br>')
+     }
+
+
+
+</script>
+</body>
+</html>

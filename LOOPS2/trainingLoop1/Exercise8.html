@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hãy thử đoán xem</title>
+</head>
+<body>
+<button id="Start" type="reset" onclick="start()">Start</button>
+<script>
+
+    function comSelect(a, b) {
+        return Math.floor(Math.random() * (a - b + 1)) + a;
+    }
+
+    function start() {
+        let min = parseInt(prompt('nhập giá trị nhỏ nhất '));
+        let max = parseInt(prompt('nhập giá trị lớn nhất'));
+        let com = comSelect(min, max);
+        for(let i=0;i<1;i++){
+            if (youSelect() == com) {
+                alert('YOU WIN');
+                break;
+            }alert('You have 2 life');
+            if((youSelect() == com)) {
+                alert('YOU WIN');
+                break;
+            }alert('You have 1 life');
+            if (youSelect()==com){
+                alert('YOU WIN');
+                break;
+            }alert('You lose')
+        }
+
+    }
+
+    function youSelect(){
+        let you = '';
+        you =parseInt(prompt('nhập giá trị bạn chọn'));
+        return you;
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>
