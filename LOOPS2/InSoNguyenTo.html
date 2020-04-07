@@ -6,60 +6,48 @@
 </head>
 <body>
 <script>
-    let numbers = parseInt(prompt('nhập số lượng số nguyên tố cần in ra:'));
-    let count =0;
-    let n =2;
-    while (count<numbers){
-        if(kiem_tra_snt(n)){
-            document.write(n + " là số nguyên tố <br/>");
+    // let num = Number(prompt("Nhập số lượng số nguyên tố cần in ra: "));
+    // let count =0;
+    // let n=2;
+    // while (count<num){
+    //     let kiemtra1=false;
+    //     if(n<2){
+    //         kiemtra1 =false;
+    //     }else if(n==2){
+    //         kiemtra1 =true;
+    //     }else{
+    //         for(let i=3;i<=Math.sqrt(a);i++){
+    //             if(n%i==0){
+    //                 kiemtra1 = false;
+    //             }else
+    //                 kiemtra1 = true;
+    //         }
+    //     }
+    //     if (kiemtra1==true){
+    //         document.write(n + ' ,');
+    //     }
+    //     n++;
+    //     count++;
+    //
+    // }
+    let num = Number(prompt("Nhập số lượng số nguyên tố cần in ra: "));
+    let count = 0 , kiemtra = true  , n = 2;
+    while (count < num) {
+        for (let i = 2 ; i <=Math.sqrt(n) ; i++) {
+            if (n % i == 0) {
+                kiemtra = false;
+                break;
+            } else {
+                kiemtra = true;
+            }
+        }
+        if (kiemtra) {
             count++;
+            document.write(n + ', ');
         }
         n++;
-
     }
 
-
-
-    function kiem_tra_snt(a)
-    {
-        // Biến cờ hiệu
-        var flag = true;
-
-        // Nếu n bé hơn 2 tức là không phải số nguyên tố
-        if (a < 2){
-            flag = false;
-        }
-        else if (a == 2){
-            flag = true;
-        }
-        else if (a % 2 == 0){
-            flag = false;
-        }
-        else{
-            // lặp từ 3 tới n-1 với bước nhảy là 2 (i+=2)
-            for (var i = 3; i < Math.sqrt(a); i+=2)
-            {
-                if (a % i == 0){
-                    flag = false;
-                    return false;
-                    break;
-                }
-            }return true;
-        }
-
-
-        // Kiểm tra biến flag
-        // if (flag == true){
-        //     document.write(n + " là số nguyên tố <br/>");
-        //
-        //
-        // }
-
-
-        // else{
-        //     document.write(n + " không phải là số nguyên tố <br/>");
-        // }
-    }
 </script>
 </body>
 </html>
