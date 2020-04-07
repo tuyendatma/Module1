@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Tính lãi ngân hàng</title>
 </head>
 <body>
-$END$
+<script>
+    let tongTienVay = parseInt(prompt('tổng tiền vay'));
+    let x = tongTienVay;
+    let soThangVay = parseInt(prompt('số tháng vay'));
+    let laiSuatThang = parseInt(prompt('lãi suất hàng tháng'));
+    let tienLaiThang = 0;
+    for(let i=1;i<=soThangVay;i++){
+        tienLaiThang = laiSuatThang* tongTienVay/100;
+        tongTienVay +=tienLaiThang;
+    }
+    let tongLaiSuat = tongTienVay -x;
+    alert(tongLaiSuat);
+</script>
 </body>
 </html>

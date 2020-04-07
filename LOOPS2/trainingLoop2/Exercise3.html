@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>in tam giác vuông</title>
 </head>
 <body>
-$END$
+<script>
+    // vẽ tam giác 1
+    let a ='*';
+    for(let i=1;i<=5;i++){
+        document.write(a+'<br>');
+        a+='*';
+    }
+   document.write('<br>');
+    // vẽ tam giác 2
+    let b='*';
+
+    for(i=5;i>0;i--){
+        for(let j=0;j<i;j++){
+            document.write(b);
+        }document.write('<br>')
+    }
+    document.write('<br>');
+    //vẽ tam giác 3
+    let width=5;
+    for(let i=1; i<=width; i++){
+        for(let j=0; j<=width-i;j++){
+            document.write('&nbsp;'+'&nbsp;');
+        }
+        for(let k=0; k<i;k++){
+            document.write('*');
+        }document.write('</br>');
+    }
+    // vẽ tam giác 4
+
+    for(let i=0; i<=width; i++){
+        for(let j=0; j<=i;j++){
+            document.write('&nbsp;'+'&nbsp;');
+        }
+        for(let k= 1;k<=width-i;k++){
+            document.write('*');
+        }document.write('</br>');
+    }
+
+
+
+</script>
 </body>
 </html>

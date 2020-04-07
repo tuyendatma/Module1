@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>In ra hình chữ nhật</title>
 </head>
 <body>
-$END$
+<script>
+    let n=parseInt(prompt('nhập chiều dài'));
+    let m=parseInt(prompt('nhập chiều rộng'));
+    for(let i=0;i<n;i++){
+        for(let j=0;j<m;j++){
+            if(i==0||j==0||j==m-1||i==n-1){
+                document.write('*');
+            }else document.write('&#160'+'&#160');
+        }document.write('<br>');
+    }
+</script>
 </body>
 </html>
