@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Adam-Eva</title>
+    <script src="apple.js"></script>
+    <script src="human.js"></script>
+</head>
+<body>
+
+<script>
+    let appleRed= new Apple();
+    let adam = new Human("adam",60,true);
+    let eva =new Human("eva",45,false);
+    for(let i=0;i<10;i++){
+        adam.eatApple(appleRed);
+        eva.eatApple(appleRed);
+        if(appleRed.weight==0){
+            break;
+        }
+    }
+    adam.setName(eva);
+    adam.setWeight(eva);
+    eva.setName(adam);
+    eva.setWeight(adam);
+</script>
+</body>
+</html>
